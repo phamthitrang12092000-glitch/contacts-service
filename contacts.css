@@ -1,0 +1,24 @@
+table {
+  border-collapse: collapse;
+  width: 400px;
+  font-family: Arial, sans-serif;
+}
+
+th {
+  background-color: #4CAF50; /* xanh lá */
+  color: white;
+  font-size: 16px;
+  padding: 8px;
+}
+
+td {
+  background-color: #f9f9f9; /* xám nhạt */
+  color: #333;
+  font-size: 14px;
+  padding: 8px;
+  border: 1px solid #ddd;
+}
+
+tr:nth-child(even) td {
+  background-color: #eee; /* xen kẽ màu */
+}
