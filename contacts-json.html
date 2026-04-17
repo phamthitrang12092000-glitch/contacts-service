@@ -8,7 +8,7 @@
 <body>
   <h2>전화번호 리스트 (JSON)</h2>
   <table id="contactsTable">
-    <tr><th>이름</th><th>전화번호</th></tr>
+    <tr><th>이름</th><th>전화번호</th><th>이메일</tr>
   </table>
 
   <script>
@@ -18,7 +18,7 @@
         const table = document.getElementById("contactsTable");
         json.data.forEach(item => {
           const row = document.createElement("tr");
-          row.innerHTML = `<td>${item.name}</td><td>${item.telephone}</td>`;
+          row.innerHTML = `<td>${item.name}</td><td>${item.telephone}</td><td>${item.email}</td>`;
 
           table.appendChild(row);
         });
