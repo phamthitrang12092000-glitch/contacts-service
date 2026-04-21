@@ -12,10 +12,10 @@ conn = pymysql.connect(
     charset="utf8"
 )
 cur = conn.cursor()
-cur.execute("SELECT name, phone, email FROM contacts")
+cur.execute("SELECT name, phone, email, address FROM contacts")
 
 rows = cur.fetchall()
-data = [{"name": name, "telephone": phone, "email": email} for name, phone, email in rows]
+data = [{"name": name, "telephone": phone, "email": email, "address": address} for name, phone, email, address in rows]
 
 result = {
     "ok": True,
